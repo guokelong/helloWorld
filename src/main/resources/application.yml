@@ -23,15 +23,19 @@ spring:
     testWhileIdle: true
     testOnBorrow: true
     testOnReturn: true
+  rabbitmq:
+    host: 192.168.19.22
+    username: admin
+    password: 123456
 #    serialization:
 #      write-dates-as-timestamps: true
 server:
-  port: 8062
+  port: 8066
   undertow:
     io-threads: 4
     worker-threads: 16
 mybatis:
-  type-aliases-package: com.zhonghuilv.management.pojo
+  type-aliases-package: com.example.helloworld.dto
   #驼峰
   configuration:
     map-underscore-to-camel-case: true
