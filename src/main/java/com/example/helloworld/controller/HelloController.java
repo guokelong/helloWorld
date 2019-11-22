@@ -16,7 +16,7 @@ public class HelloController {
     @Autowired
     UserMapper userMapper;
     @Autowired
-    AmqpTemplate amqpTemplate;
+    AmqpTemplate amqpTemplate; 
 
     @RequestMapping("sayHello")
     public String sayHello()
